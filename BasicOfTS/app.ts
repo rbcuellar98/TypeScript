@@ -1,12 +1,14 @@
-function add(n1: number, n2: number){
-    if(typeof typeof n1 !== 'number' || typeof n2 !== 'number'){
-        throw new Error ('Incorrect input!');
-    }
-    return n1 + n2;
+const person = {
+    name: 'Mike',
+    age: 24,
+    hobbies: ['Sports','Cooking']
+};
+
+let favoriteActivities: string[]; 
+favoriteActivities = ['Sports'];
+
+console.log(person.name);
+
+for (const hobby of person.hobbies){
+    console.log(hobby.toUpperCase());
 }
-
-const number1 = 5;
-const number2 = 2.8;
-
-const result = add(number1, number2);
-console.log(result);
